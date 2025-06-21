@@ -13,7 +13,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         {/* Logo */}
         <Link to="/" className="nav-logo" onClick={() => setIsMenuOpen(false)}>
           <img
-            src="../../public/file_000000008d4061f7add12faa0f359db9.jpg"
+            src="/file_000000008d4061f7add12faa0f359db9.jpg"
             alt="Logo"
             className="nav-logo-img"
           />
