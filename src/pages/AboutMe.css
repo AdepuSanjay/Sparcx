@@ -1,0 +1,96 @@
+/* Team Section */
+.team-section {
+  padding: 60px 16px;
+  background-color: white;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+/* Responsive Flex Layout */
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Team Member */
+.profile-card {
+  background-color: transparent;
+  max-width: 320px;
+  text-align: center;
+  padding: 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar Image */
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+
+}
+
+/* Content */
+.profile-content h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.title {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.experience {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 14px;
+  line-height: 1.5;
+  padding: 0 8px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skill-badge {
+  background-color: #ff4224b1;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #1e40af;
+}

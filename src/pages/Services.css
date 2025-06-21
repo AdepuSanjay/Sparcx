@@ -1,0 +1,124 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #0f0f0f;
+  --text-light: #111111;
+  --text-dark: #f9f9f9;
+  --accent:#ff4224b1 ;
+  --divider-light: #e0e0e0;
+  --divider-dark: #2a2a2a;
+  --muted-light: #666666;
+  --muted-dark: #bbbbbb;
+  --font-main: 'Inter', sans-serif;
+  --font-headings: 'DM Serif Display', serif;
+}
+
+/* Base layout */
+.services-container {
+  padding: 5rem 1.5rem;
+  max-width: 1140px;
+  margin: auto;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  font-family: var(--font-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.services-container.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Headings */
+.services-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  font-family: var(--font-headings);
+}
+
+.services-subtitle {
+  text-align: center;
+  font-size: 1.0rem;
+  color: var(--muted-light);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.services-container.dark .services-subtitle {
+  color: var(--muted-dark);
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Section block */
+.service-card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem 1.2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.dark .service-card {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: var(--font-main);
+}
+
+/* List */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.service-card li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+  top: 1px;
+}
+
+/* Divider between cards - optional */
+.service-card:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--divider-light);
+  margin-top: 2rem;
+  opacity: 0.3;
+}
+
+.services-container.dark .service-card:not(:last-child)::after {
+  background-color: var(--divider-dark);
+}
