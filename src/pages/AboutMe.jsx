@@ -9,7 +9,7 @@ const teamData = [
     title: "Full Stack Developer",
     experience: "1 year",
     skills: ["HTML", "CSS", "JavaScript", "Django"],
-    avatar: "../../public/ffa606d8-e23e-4d2e-ac8e-f10090aa2896.jpg",
+    avatar: "/ffa606d8-e23e-4d2e-ac8e-f10090aa2896.jpg",
     description:
       "Vinay is a passionate full stack developer skilled in creating responsive user interfaces and dynamic web applications. With experience in Django and core web technologies, he brings user-focused solutions to life with precision and adaptability.",
   },
@@ -19,7 +19,7 @@ const teamData = [
     title: "Frontend Developer",
     experience: "1 year",
     skills: ["HTML", "CSS", "JavaScript", "React Js"],
-    avatar: "../../public/IMG-20250613-WA0017.png",
+    avatar: "/IMG-20250613-WA0017.png",
     description:
       "Naveen is a detail-oriented frontend developer specializing in crafting engaging, high-performance user interfaces using modern frameworks like React. He combines creativity with technical proficiency to deliver smooth and responsive web experiences.",
   },
@@ -29,7 +29,7 @@ const teamData = [
     title: "Full Stack Developer",
     experience: "2 years",
     skills: ["MERN Stack", "Django","Next js"],
-    avatar: "../../img.jpg.jpg",
+    avatar: "/img.jpg.jpg",
     description:
       "Karthik is an experienced full stack developer known for building end-to-end web solutions with efficiency and scalability. His strong foundation in both frontend frameworks and backend systems enables him to architect and deliver enterprise-grade applications.",
   },
@@ -39,7 +39,7 @@ const teamData = [
     title: "Full Stack Developer",
     experience: "1 year",
     skills: ["MERN Stack", "Django"],
-    avatar: "../../public/file_000000002f6461f799c1b6af4733c280 (1).jpg",
+    avatar: "/file_000000002f6461f799c1b6af4733c280 (1).jpg",
     description:
       "Sanjay is a dedicated full stack developer with expertise in both frontend and backend technologies. With strong command over the MERN stack and Django, he builds robust, scalable web applications with a focus on clean architecture and seamless user experience.",
   }
