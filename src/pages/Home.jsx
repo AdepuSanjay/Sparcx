@@ -57,7 +57,7 @@ useEffect(() => {
           <Link to="/contact"> <button className="cta-button">Let's Connect</button></Link> 
             </div>
             <div className="hero-image">
-              <img src="../../public/file_00000000fefc61f89ecbec7ea0a1380c~2.jpg" alt="Full Stack Dev Team" />
+              <img src="/file_00000000fefc61f89ecbec7ea0a1380c~2.jpg" alt="Full Stack Dev Team" />
             </div>
           </div>
         </section>
@@ -132,7 +132,7 @@ useEffect(() => {
     </div>
 
     <div className="approach-image">
-      <img src="../../public/file_00000000814c62308c2dde3dec821cec.jpg" alt="Development Team Illustration" />
+      <img src="/file_00000000814c62308c2dde3dec821cec.jpg" alt="Development Team Illustration" />
     </div>
   </div>
 </section>
