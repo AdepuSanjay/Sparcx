@@ -13,8 +13,10 @@ import {
   SiCloudinary,
   SiTailwindcss,
   SiPostgresql,
-  SiFirebase,
+  SiNextdotjs, // ✅ Added
+  // SiFirebase, // ❌ Removed
 } from "react-icons/si";
+
 
 const HomePage = () => {
   useEffect(() => {
@@ -73,9 +75,6 @@ useEffect(() => {
         
 
       </section>
-
-      {/* Tech Stack Icons */}
-            
 <h2 id="f">Tech stack</h2>
 <div className="icons-grid">
   <div data-aos="zoom-in" data-aos-delay="0">
@@ -97,12 +96,14 @@ useEffect(() => {
     <SiCloudinary color="#F38020" /><span>Cloudinary</span>
   </div>
   <div data-aos="zoom-in" data-aos-delay="600">
-    <SiFirebase color="#FFCA28" /><span>Firebase</span>
+    <SiNextdotjs color="#000000" /><span>Next.js</span> {/* ✅ Replaced Firebase */}
   </div>
   <div data-aos="zoom-in" data-aos-delay="700">
     <SiPostgresql color="#336791" /><span>PostgreSQL</span>
   </div>
 </div>
+ 
+
 
       {/* Why Choose Us */}
     <section className="why-choose" data-aos="fade-top">
@@ -115,6 +116,8 @@ useEffect(() => {
           Communication, transparency, and continuous iteration are the pillars of our delivery process.
         </p>
       </section>
+
+
 
       {/* Approach Section */}
 <section className="approach" data-aos="flip-up">
