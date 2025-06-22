@@ -17,7 +17,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             alt="Logo"
             className="nav-logo-img"
           />
-          <span className="firebrik-text">Sparcx</span>
+          <span className="firebrik-text">Sparcx Solutions</span>
         </Link>
 
         {/* Desktop Links */}
