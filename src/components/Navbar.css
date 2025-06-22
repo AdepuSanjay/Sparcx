@@ -149,6 +149,21 @@ border-bottom:1px solid #bfbbbbb1;
   .nav-links-desktop {
     display: none;
   }
+.firebrik-text {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff4224b1 0%, #ff4224b1 40%,#444 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    1px 1px 2px rgba(0,0,0,0.2),
+    -1px -1px 2px rgba(255,255,255,0.1);
+}
+
+
+
 }
 
 /* Active and Hover Styles for Desktop Links */
