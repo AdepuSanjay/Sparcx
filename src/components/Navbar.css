@@ -152,7 +152,7 @@ border-bottom:1px solid #bfbbbbb1;
 .firebrik-text {
   font-family: 'Orbitron', sans-serif; /* Futuristic font */
   font-size: 13.8px;
-  letter-spacing: 3px;
+  letter-spacing: 3px; 
   text-transform: uppercase;
   background: linear-gradient(90deg, #ff4224b1 0%, #ff4224b1 40%,#444 80%);
   -webkit-background-clip: text;
