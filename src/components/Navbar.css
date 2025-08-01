@@ -106,12 +106,12 @@ html, body {
   left: -100%;
   width: 80%;
   height: 100vh;
-  background-color: white;
+  background-color: #ffffff;
   transition: left 0.3s ease;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   padding-top: 70px;
   z-index: 9999;
-  transform: translateZ(0);
+  transform: translateZ(0); /* iOS fix */
   will-change: left;
 }
 
@@ -152,13 +152,20 @@ html, body {
   z-index: 10001;
   position: relative;
   touch-action: manipulation;
+  transform: translateZ(0); /* iOS rendering fix */
+  padding: 6px;
+  border-radius: 6px;
 }
 
+/* Toggle Bars */
 .nav-toggle-bar {
+  width: 100%;
   height: 3px;
   background-color: #111 !important;
   border-radius: 2px;
   transition: all 0.3s ease;
+  display: block;
+  transform: translateZ(0); /* iOS rendering fix */
 }
 
 /* Toggle Animation */
