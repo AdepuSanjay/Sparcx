@@ -1,27 +1,28 @@
-/* Root Variables for Light & Dark Mode */
+/* Root Variables are now centralized in App.css; we rely on them here */
 :root {
-    --primary-color: #ff4224b1;
-    --primary-hover: #0056b3;
-    --bg-light: #ffffff;
+    --primary-color: var(--color-primary-600);
+    --primary-hover: var(--color-primary-700);
+    --bg-light: var(--color-bg);
     --bg-dark: #121212;
-    --text-light: #333;
-    --text-dark: #f5f5f5;
-    --border-light: #ddd;
+    --text-light: var(--color-text-900);
+    --text-dark: var(--color-text-900);
+    --border-light: var(--border-color);
     --border-dark: #444;
-    --input-bg-light: #f9f9f9;
+    --input-bg-light: var(--color-surface-2);
     --input-bg-dark: #222;
-    --shadow-light: rgba(0, 0, 0, 0.1);
-    --shadow-dark: rgba(255, 255, 255, 0.1);
+    --shadow-light: rgba(2, 6, 23, 0.08);
+    --shadow-dark: rgba(255, 255, 255, 0.08);
 }
 
 /* Contact Section - Centered & Responsive */
 .contact-section {
     max-width: 800px;
     width: 90%;
-    margin:200px auto;
+    margin: 140px auto 60px;
     padding: 30px;
     background: var(--bg-light);
     box-shadow: 0 6px 15px var(--shadow-light);
+    border: 1px solid var(--border-light);
     border-radius: 12px;
     text-align: center;
     transition: all 0.3s ease-in-out;
@@ -50,7 +51,7 @@ body.dark-mode .contact-title {
 
 /* Success Message */
 .message-success {
-    color: #28a745;
+    color: #16a34a;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -91,8 +92,7 @@ body.dark-mode .contact-textarea {
 /* Input Focus */
 .contact-input:focus,
 .contact-textarea:focus {
-    border-color: black;
-    
+    border-color: var(--primary-color);
 }
 
 /* Textarea */
@@ -107,15 +107,15 @@ body.dark-mode .contact-textarea {
     max-width: 450px;
     padding: 14px;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.18);
 }
 
 /* Dark Mode Button */
@@ -129,7 +129,7 @@ body.dark-mode .contact-btn {
     transform: translateY(-2px);
 }
 .contact-btn:active {
-    transform: scale(0.98);
+    transform: translateY(0);
 }
 
 /* Fade-in Animation */
@@ -141,10 +141,9 @@ body.dark-mode .contact-btn {
 /* Responsive Design */
 @media (max-width: 600px) {
     .contact-section {
-        width: 80%;
-        margin-top:120px;
-        padding: 24px ;
-        
+        width: 88%;
+        margin-top: 120px;
+        padding: 24px;
     }
 
     .contact-title {

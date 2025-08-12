@@ -1,7 +1,7 @@
 /* Team Section */
 .team-section {
   padding: 60px 16px;
-  background-color: white;
+  background-color: var(--color-bg);
   text-align: center;
 }
 
@@ -9,7 +9,7 @@
   font-size: 2rem;
   margin-bottom: 40px;
   font-weight: 700;
-  color: #111827;
+  color: var(--color-text-900);
   letter-spacing: -0.5px;
 }
 
@@ -40,7 +40,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
-
+  box-shadow: var(--shadow-sm);
 }
 
 /* Content */
@@ -48,27 +48,27 @@
   font-size: 1.4rem;
   margin: 0;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--color-text-900);
 }
 
 .title {
   font-size: 0.95rem;
-  color: #6b7280;
+  color: var(--color-text-500);
   font-weight: 500;
   margin-bottom: 6px;
 }
 
 .experience {
-  font-size: 0.85rem;
-  color: #4b5563;
+  font-size: 0.9rem;
+  color: var(--color-text-700);
   margin-bottom: 10px;
 }
 
 .description {
-  font-size: 0.9rem;
-  color: #374151;
+  font-size: 0.95rem;
+  color: var(--color-text-700);
   margin-bottom: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   padding: 0 8px;
 }
 
@@ -82,15 +82,17 @@
 }
 
 .skill-badge {
-  background-color: #ff4224b1;
-  color: white;
+  background-color: var(--color-surface-2);
+  color: var(--color-text-900);
   padding: 6px 12px;
   border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  transition: 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.25s ease;
+  border: 1px solid var(--border-color);
 }
 
 .skill-badge:hover {
-  background-color: #1e40af;
+  background-color: var(--color-primary-600);
+  color: white;
 }

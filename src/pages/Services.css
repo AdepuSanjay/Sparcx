@@ -1,12 +1,12 @@
 :root {
-  --bg-light: #ffffff;
+  --bg-light: var(--color-bg);
   --bg-dark: #0f0f0f;
-  --text-light: #111111;
+  --text-light: var(--color-text-900);
   --text-dark: #f9f9f9;
-  --accent:#ff4224b1 ;
-  --divider-light: #e0e0e0;
+  --accent: var(--color-primary-600);
+  --divider-light: var(--border-color);
   --divider-dark: #2a2a2a;
-  --muted-light: #666666;
+  --muted-light: var(--color-text-500);
   --muted-dark: #bbbbbb;
   --font-main: 'Inter', sans-serif;
   --font-headings: 'DM Serif Display', serif;
@@ -31,9 +31,9 @@
 /* Headings */
 .services-title {
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
   letter-spacing: -0.5px;
   font-family: var(--font-headings);
 }
@@ -62,9 +62,10 @@
 .service-card {
   background: rgba(255, 255, 255, 0.7);
   padding: 1.5rem 1.2rem;
-  border-radius: 12px;
+  border-radius: 16px;
+  border: 1px solid var(--divider-light);
   border-left: 4px solid var(--accent);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -74,7 +75,7 @@
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-md);
 }
 
 .service-card h3 {

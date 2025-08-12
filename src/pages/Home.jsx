@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import Navbar from "../components/Navbar.jsx";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,10 +10,8 @@ import {
   SiNodedotjs,
   SiDjango,
   SiCloudinary,
-  SiTailwindcss,
   SiPostgresql,
-  SiNextdotjs, // ✅ Added
-  // SiFirebase, // ❌ Removed
+  SiNextdotjs,
 } from "react-icons/si";
 
 
@@ -46,7 +43,6 @@ useEffect(() => {
 }, []);
   return (
     <>
-      <Navbar />
     <div className="homepage-container">
       {/* Hero Section */}
  <section className="hero" data-aos="fade-bottom">
@@ -96,7 +92,7 @@ useEffect(() => {
     <SiCloudinary color="#F38020" /><span>Cloudinary</span>
   </div>
   <div data-aos="zoom-in" data-aos-delay="600">
-    <SiNextdotjs color="#000000" /><span>Next.js</span> {/* ✅ Replaced Firebase */}
+    <SiNextdotjs color="#000000" /><span>Next.js</span>
   </div>
   <div data-aos="zoom-in" data-aos-delay="700">
     <SiPostgresql color="#336791" /><span>PostgreSQL</span>
