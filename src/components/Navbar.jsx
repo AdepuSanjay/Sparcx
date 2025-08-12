@@ -14,7 +14,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <Link to="/" className="nav-logo" onClick={() => setIsMenuOpen(false)}>
           <img
             src="/file_000000008d4061f7add12faa0f359db9.jpg"
-            alt="Logo"
+            alt="Sparcx Solutions Logo"
             className="nav-logo-img"
           />
           <span className="firebrik-text">Sparcx Solutions</span>
@@ -40,20 +40,44 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           ))}
         </ul>
 
-        {/* Toggle Button */}
-        <button
-          className={`nav-toggle-btn ${isMenuOpen ? "open" : ""}`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle navigation"
-        >
-          <div className="nav-toggle-bar" />
-          <div className="nav-toggle-bar" />
-          <div className="nav-toggle-bar" />
-        </button>
+        {/* Right controls */}
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <button
+            onClick={toggleDarkMode}
+            aria-label="Toggle theme"
+            title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+            style={{
+              background: "transparent",
+              border: `1px solid var(--border-color)`,
+              padding: "8px 10px",
+              borderRadius: "10px",
+              cursor: "pointer",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--color-text-900)",
+            }}
+          >
+            {darkMode ? <FaSun size={16} /> : <FaMoon size={16} />}
+          </button>
+
+          {/* Toggle Button */}
+          <button
+            className={`nav-toggle-btn ${isMenuOpen ? "open" : ""}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+          >
+            <div className="nav-toggle-bar" />
+            <div className="nav-toggle-bar" />
+            <div className="nav-toggle-bar" />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Sidebar */}
-      <div className={`nav-sidebar ${isMenuOpen ? "open" : ""}`}>
+      <div id="mobile-menu" className={`nav-sidebar ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-links-mobile">
           {[
             { to: "/", label: "Home" },

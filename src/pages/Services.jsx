@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar"; // Import Navbar
 import "./Services.css"; // Import CSS
 
 const servicesData = [
@@ -23,26 +22,23 @@ const servicesData = [
 
 const Services = ({ darkMode, toggleDarkMode }) => {
   return (
-    <>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> {/* Pass props */}
-      <div className={`services-container ${darkMode ? "dark" : ""}`}>
-        <h2 className="services-title">Services</h2>
-        <p className="services-subtitle">We provide all types of websites and development services.</p>
-        
-        <div className="services-grid">
-          {servicesData.map((service, index) => (
-            <div key={index} className={`service-card ${darkMode ? "dark" : ""}`}>
-              <h3>{service.category}</h3>
-              <ul>
-                {service.services.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+    <div className={`services-container ${darkMode ? "dark" : ""}`}>
+      <h2 className="services-title">Services</h2>
+      <p className="services-subtitle">We provide all types of websites and development services.</p>
+      
+      <div className="services-grid">
+        {servicesData.map((service, index) => (
+          <div key={index} className={`service-card ${darkMode ? "dark" : ""}`}>
+            <h3>{service.category}</h3>
+            <ul>
+              {service.services.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -11,7 +11,7 @@
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #222;
+  color: var(--color-text-900);
   letter-spacing: 0.5px;
 }
 
@@ -22,7 +22,7 @@
 .project-card {
   margin-bottom: 60px;
   padding: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .project-card.dark {
@@ -31,9 +31,9 @@
 
 .project-title {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
-  color: #222;
+  color: var(--color-text-900);
   letter-spacing: 0.3px;
 }
 
@@ -43,9 +43,9 @@
 
 .project-description {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-bottom: 15px;
-  color: #444;
+  color: var(--color-text-700);
   font-weight: 400;
 }
 
@@ -56,22 +56,23 @@
 .project-tech {
   margin-bottom: 20px;
   font-size: 0.95rem;
-  color: #555;
-  font-weight: 400;
+  color: var(--color-text-500);
+  font-weight: 500;
 }
 
 .project-tech span {
   display: inline-block;
-  background-color: #eee;
+  background-color: var(--color-surface-2);
   margin: 4px 8px 0 0;
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .project-card.dark .project-tech span {
-  background-color: #444;
+  background-color: #1f2937;
   color: #ddd;
 }
 
@@ -87,13 +88,15 @@
   width: 100%;
   max-height: 450px;
   object-fit: cover;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  box-shadow: var(--shadow-sm);
 }
 
 .project-image:hover {
   transform: scale(1.02);
+  box-shadow: var(--shadow-md);
 }
 
 .project-links {
@@ -109,19 +112,21 @@
 .project-links a {
   text-decoration: none;
   color: #fff;
-  background-color: #ff4224b1;
+  background-color: var(--color-primary-600);
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 0.95rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
   min-width: 140px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
 }
 
 .project-links a:hover {
-  background-color: #0056b3;
+  background-color: var(--color-primary-700);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 /* Mobile responsiveness */
@@ -156,7 +161,7 @@
 .lightbox-image {
   max-width: 95%;
   max-height: 90%;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 /* Responsive Styles */
@@ -166,14 +171,13 @@
   }
 
   .project-title {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight:600;
-    color:black;
+    color: var(--color-text-900);
   }
 
   .project-description {
-    font-size: 0.55rem;
-    
+    font-size: 0.85rem;
   }
 
   .project-slider {
