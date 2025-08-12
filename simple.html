@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Page</title>
+    <meta name="description" content="A clean, responsive HTML + CSS starter page" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#">SimplePage</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact" class="btn btn-small">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Build a clean page fast</h1>
+          <p>A minimal, responsive starter using only HTML and CSS. No build tools required.</p>
+          <div class="actions">
+            <a href="#features" class="btn">Explore Features</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="public/photo1.jpg" alt="Decorative" />
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="section-title">Features</h2>
+          <div class="grid features">
+            <article class="card">
+              <div class="card-icon">⚡</div>
+              <h3>Fast</h3>
+              <p>Lightweight markup and styles that load quickly anywhere.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">📱</div>
+              <h3>Responsive</h3>
+              <p>Mobile-first layout that adapts gracefully to any screen.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">🎨</div>
+              <h3>Customizable</h3>
+              <p>Tweak color variables and spacing to match your brand.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Gallery</h2>
+          <div class="grid gallery">
+            <img src="public/photo2.jpg" alt="Gallery item 1" />
+            <img src="public/photo3.jpg" alt="Gallery item 2" />
+            <img src="public/photo4.jpg" alt="Gallery item 3" />
+            <img src="public/photo5.jpg" alt="Gallery item 4" />
+            <img src="public/photo6.jpg" alt="Gallery item 5" />
+            <img src="public/pic1.jpg" alt="Gallery item 6" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <form class="card form" onsubmit="event.preventDefault(); alert('Thanks! This demo form does not submit.');">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> SimplePage. All rights reserved.</p>
+        <a href="#" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
