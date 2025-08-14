@@ -19,7 +19,7 @@ const teamData = [
     title: "Frontend Developer",
     experience: "1 year",
     skills: ["HTML", "CSS", "JavaScript", "React Js"],
-    avatar: "https://res.cloudinary.com/dppiuypop/image/upload/v1755173985/uploads/xqha88ckzmealzauvfzb.jpg",
+    avatar: "https://res.cloudinary.com/dppiuypop/image/upload/v1755175891/uploads/czxbcsznhdkquvjxhz0n.jpg",
     description:
       "Naveen is a detail-oriented frontend developer specializing in crafting engaging, high-performance user interfaces using modern frameworks like React. He combines creativity with technical proficiency to deliver smooth and responsive web experiences.",
   },
