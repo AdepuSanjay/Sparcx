@@ -7,7 +7,7 @@ const Contact = () => {
     const [success, setSuccess] = useState("");
     const [loading, setLoading] = useState(false); // ⬅️ Added loading state
 
-
+h
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
