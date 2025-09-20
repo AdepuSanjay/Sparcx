@@ -5,7 +5,7 @@ import "./Contact.css"; // External CSS
 const Contact = () => {
     const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
     const [success, setSuccess] = useState("");
-    const [loading, setLoading] = useState(false); // ⬅️ Added loading state
+    const [loading, setLoading] = useState(false);  
 
 h
 
