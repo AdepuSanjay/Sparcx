@@ -7,7 +7,6 @@ const Contact = () => {
     const [success, setSuccess] = useState("");
     const [loading, setLoading] = useState(false); // ⬅️ Added loading state
 
-g
 
 
     const handleChange = (e) => {
